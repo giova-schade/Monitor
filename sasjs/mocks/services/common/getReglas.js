@@ -1,134 +1,141 @@
 _webout = `{
-    "SYSDATE":"05OCT23",
-    "SYSTIME":"14:33",
-    "status":[
-       {
-          "Estado":"ok",
-          "MENSAJE":""
-       }
-    ],
-    "proceso1":[
-       {
-        "regla01":0,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla02":0,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla03":0,
-        "regla03Desc":"sda das das da dasdasd asdsa ",
-        "regla04":1,
-        "regla04Desc":"sda das das da dasdasd asdsa ",
-        "regla05":1,
-        "regla05Desc":"sda das das da dasdasd asdsa ",
-        "regla06":1,
-        "regla06Desc":"sda das das da dasdasd asdsa ",
-        "regla07":1,
-        "regla07Desc":"sda das das da dasdasd asdsa ",
-        "regla08":1,
-        "regla08Desc":"sda das das da dasdasd asdsa ",
-        "regla09":1,
-        "regla09Desc":"sda das das da dasdasd asdsa ",
-        "regla10":1,
-        "regla10Desc":"sda das das da dasdasd asdsa ",
-        "regla11":1,
-        "regla11Desc":"sda das das da dasdasd asdsa ",
-        "regla12":1,
-        "regla12Desc":"sda das das da dasdasd asdsa ",
-        "regla13":1,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla14":1,
-        "regla14Desc":"sda das das da dasdasd asdsa ",
-        "regla15":1,
-        "regla15Desc":"sda das das da dasdasd asdsa "
-
-       }
-    ],
-    "proceso2":[
-       {
-        "regla01":0,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla02":0,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla03":0,
-        "regla03Desc":"sda das das da dasdasd asdsa ",
-        "regla04":1,
-        "regla04Desc":"sda das das da dasdasd asdsa ",
-        "regla05":1,
-        "regla05Desc":"sda das das da dasdasd asdsa ",
-        "regla06":1,
-        "regla06Desc":"sda das das da dasdasd asdsa ",
-        "regla07":1,
-        "regla07Desc":"sda das das da dasdasd asdsa ",
-        "regla08":1,
-        "regla08Desc":"sda das das da dasdasd asdsa ",
-        "regla09":1,
-        "regla09Desc":"sda das das da dasdasd asdsa ",
-        "regla10":1,
-        "regla10Desc":"sda das das da dasdasd asdsa ",
-        "regla11":1,
-        "regla11Desc":"sda das das da dasdasd asdsa ",
-        "regla12":1,
-        "regla12Desc":"sda das das da dasdasd asdsa ",
-        "regla13":1,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla14":1,
-        "regla14Desc":"sda das das da dasdasd asdsa ",
-        "regla15":1,
-        "regla15Desc":"sda das das da dasdasd asdsa "
-       }
-    ],
-    "proceso3":[
-       {
-        "regla01":0,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla02":0,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla03":0,
-        "regla03Desc":"sda das das da dasdasd asdsa ",
-        "regla04":1,
-        "regla04Desc":"sda das das da dasdasd asdsa ",
-        "regla05":1,
-        "regla05Desc":"sda das das da dasdasd asdsa ",
-        "regla06":1,
-        "regla06Desc":"sda das das da dasdasd asdsa ",
-        "regla07":1,
-        "regla07Desc":"sda das das da dasdasd asdsa ",
-        "regla08":1,
-        "regla08Desc":"sda das das da dasdasd asdsa ",
-        "regla09":1,
-        "regla09Desc":"sda das das da dasdasd asdsa ",
-        "regla10":1,
-        "regla10Desc":"sda das das da dasdasd asdsa ",
-        "regla11":1,
-        "regla11Desc":"sda das das da dasdasd asdsa ",
-        "regla12":1,
-        "regla12Desc":"sda das das da dasdasd asdsa ",
-        "regla13":1,
-        "regla01Desc":"sda das das da dasdasd asdsa ",
-        "regla14":1,
-        "regla14Desc":"sda das das da dasdasd asdsa ",
-        "regla15":1,
-        "regla15Desc":"sda das das da dasdasd asdsa "
-       }
-    ],
-    "_DEBUG":"",
-    "_METAUSER":"ricardo.quezada",
-    "_METAPERSON":"s14325174",
-    "_PROGRAM":"/Boleta/Migracion/sas9/services/common/appinit",
-    "AUTOEXEC":"%2Fsasbin%2FSASConfig%2FLev1%2FSASAppEGRC%2FWorkspaceServer%2Fautoexec.sas",
-    "MF_GETUSER":"s14325174",
-    "SYSCC":"0",
-    "SYSENCODING":"utf-8",
-    "SYSERRORTEXT":"",
-    "SYSHOSTNAME":"sascsdes301",
-    "SYSPROCESSID":"41DDFBB02B4EBF2B4034000000000000",
-    "SYSPROCESSMODE":"SAS Workspace Server",
-    "SYSPROCESSNAME":"",
-    "SYSJOBID":"47743",
-    "SYSSCPL":"Linux",
-    "SYSSITE":"70205261",
-    "SYSUSERID":"ricardo.quezada",
-    "SYSVLONG":"9.04.01M7P080620",
-    "SYSWARNINGTEXT":"",
-    "END_DTTM":"2023-10-05T14:33:20.161978",
-    "MEMSIZE":"10GB"
+   "SYSDATE": "04JAN24",
+   "SYSTIME": "15:44",
+   "datos": [
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "A1_Carga_Atributos_Productos",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "A1_Carga_Maestro_Productos",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "A1_Carga_Stg_Categoria_Subrubro",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "A2_Carga_Jerarquia_Productos",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "A3_Carga_Stg_Atributo_Productos",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "B1_Carga_Familia_Prod",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "B1_Carga_Geo_Prod",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "B1_Carga_Geo_Prod_Hist",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "B1_Carga_Repo_Autt",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "B1_Carga_Stg_Jerarquia_Geo",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "C1_Carga_Promociones_Historicos",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "D2_Carga_Unidades_Por_Caja",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 1,
+       "NOMBRE_PROCESO": "D3_Carga_Peso_Neto",
+       "NOMBRE_FLUJO": "Flujo_lunes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 2,
+       "NOMBRE_PROCESO": "C3_Carga_Ventas_Dif_Incremental",
+       "NOMBRE_FLUJO": "Flujo_martes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 2,
+       "NOMBRE_PROCESO": "C4_Carga_Costos_Incremental",
+       "NOMBRE_FLUJO": "Flujo_martes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 2,
+       "NOMBRE_PROCESO": "C5_Carga_Precios_Incremental",
+       "NOMBRE_FLUJO": "Flujo_martes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 2,
+       "NOMBRE_PROCESO": "C6R_Crea_Reportes_Incrementales",
+       "NOMBRE_FLUJO": "Flujo_martes",
+       "ACTIVO": 0
+     },
+     {
+       "IDFLUJO": 2,
+       "NOMBRE_PROCESO": "C6_Carga_Inventario_Incremental",
+       "NOMBRE_FLUJO": "Flujo_martes",
+       "ACTIVO": 0
+     }
+   ],
+   "status": [
+     {
+       "ESTADO": "ok",
+       "MENSAJE": ""
+     }
+   ],
+   "_DEBUG": "",
+   "_METAUSER": "sas_etl",
+   "_METAPERSON": "sas_etl",
+   "_PROGRAM": "/Cencosud/Monitor/sas9/services/common/getReglas",
+   "AUTOEXEC": "%2Fsasbin%2Fconfig%2FLev1%2FSASApp%2FWorkspaceServer%2Fautoexec.sas",
+   "MF_GETUSER": "sas_etl",
+   "SYSCC": "0",
+   "SYSENCODING": "latin1",
+   "SYSERRORTEXT": "",
+   "SYSHOSTNAME": "clsmv3sas011",
+   "SYSPROCESSID": "41DE19B27933BA23402E000000000000",
+   "SYSPROCESSMODE": "SAS Workspace Server",
+   "SYSPROCESSNAME": "",
+   "SYSJOBID": "28002",
+   "SYSSCPL": "Linux",
+   "SYSSITE": "70200006",
+   "SYSUSERID": "sas_etl",
+   "SYSVLONG": "9.04.01M7P080620",
+   "SYSWARNINGTEXT": "ENCODING option ignored for files opened with RECFM=N.",
+   "END_DTTM": "2024-01-04T15:44:37.294644",
+   "MEMSIZE": "4GB"
  }`

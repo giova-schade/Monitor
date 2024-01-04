@@ -1,121 +1,43 @@
 _webout = `{
-    "SYSDATE": "05OCT23",
-    "SYSTIME": "14:33",
-    "status" : [{
-        "Estado": "ok",
-        "MENSAJE" : ""
-    }],
-    "datos":[
-        {
-          "id_proceso": 1,
-          "Nombre_proceso": "C3_Carga_Ventas_Dif_Incremental",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 2,
-          "Nombre_proceso": "reprocesa_procesos_parallel",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 3,
-          "Nombre_proceso": "proceso 3",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 4,
-          "Nombre_proceso": "proceso 4",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 5,
-          "Nombre_proceso": "proceso 5",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 6,
-          "Nombre_proceso": "proceso 6",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 7,
-          "Nombre_proceso": "proceso 7",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 8,
-          "Nombre_proceso": "proceso 8",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 9,
-          "Nombre_proceso": "proceso 9",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 10,
-          "Nombre_proceso": "proceso 10",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 11,
-          "Nombre_proceso": "proceso 11",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 12,
-          "Nombre_proceso": "proceso 12",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 13,
-          "Nombre_proceso": "proceso 13",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 14,
-          "Nombre_proceso": "proceso 14",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 15,
-          "Nombre_proceso": "proceso 15",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 16,
-          "Nombre_proceso": "proceso 16",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 17,
-          "Nombre_proceso": "proceso 17",
-          "label": "bla bla bla bla"
-        },
-        {
-          "id_proceso": 18,
-          "Nombre_proceso": "proceso 18",
-          "label": "bla bla bla bla"
-        }
-       ],
-    "_DEBUG": "",
-    "_METAUSER": "ricardo.quezada",
-    "_METAPERSON": "s14325174",
-    "_PROGRAM": "/Boleta/Migracion/sas9/services/common/appinit",
-    "AUTOEXEC": "%2Fsasbin%2FSASConfig%2FLev1%2FSASAppEGRC%2FWorkspaceServer%2Fautoexec.sas",
-    "MF_GETUSER": "s14325174",
-    "SYSCC": "0",
-    "SYSENCODING": "utf-8",
-    "SYSERRORTEXT": "",
-    "SYSHOSTNAME": "sascsdes301",
-    "SYSPROCESSID": "41DDFBB02B4EBF2B4034000000000000",
-    "SYSPROCESSMODE": "SAS Workspace Server",
-    "SYSPROCESSNAME": "",
-    "SYSJOBID": "47743",
-    "SYSSCPL": "Linux",
-    "SYSSITE": "70205261",
-    "SYSUSERID": "ricardo.quezada",
-    "SYSVLONG": "9.04.01M7P080620",
-    "SYSWARNINGTEXT": "",
-    "END_DTTM": "2023-10-05T14:33:20.161978",
-    "MEMSIZE": "10GB"
-  }`
+  "SYSDATE": "04JAN24",
+  "SYSTIME": "16:44",
+  "datos": [
+    {
+      "ID_PROCESO": "1",
+      "NOMBRE_PROCESO": "C3_Carga",
+      "LABEL": "bla bla"
+    },
+    {
+      "ID_PROCESO": "2",
+      "NOMBRE_PROCESO": "reproces",
+      "LABEL": "bla bla"
+    }
+  ],
+  "status": [
+    {
+      "ESTADO": "ok",
+      "MENSAJE": ""
+    }
+  ],
+  "_DEBUG": "",
+  "_METAUSER": "sas_etl",
+  "_METAPERSON": "sas_etl",
+  "_PROGRAM": "/Cencosud/Monitor/sas9/services/common/getReprocess",
+  "AUTOEXEC": "%2Fsasbin%2Fconfig%2FLev1%2FSASApp%2FWorkspaceServer%2Fautoexec.sas",
+  "MF_GETUSER": "sas_etl",
+  "SYSCC": "0",
+  "SYSENCODING": "latin1",
+  "SYSERRORTEXT": "",
+  "SYSHOSTNAME": "clsmv3sas011",
+  "SYSPROCESSID": "41DE19B5F7B3B075402E000000000000",
+  "SYSPROCESSMODE": "SAS Workspace Server",
+  "SYSPROCESSNAME": "",
+  "SYSJOBID": "3425",
+  "SYSSCPL": "Linux",
+  "SYSSITE": "70200006",
+  "SYSUSERID": "sas_etl",
+  "SYSVLONG": "9.04.01M7P080620",
+  "SYSWARNINGTEXT": "ENCODING option ignored for files opened with RECFM=N.",
+  "END_DTTM": "2024-01-04T16:44:15.212371",
+  "MEMSIZE": "4GB"
+}`

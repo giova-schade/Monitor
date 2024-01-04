@@ -54,14 +54,14 @@ export class ReprocessMainComponent implements OnInit {
     this.loadingPage = true; 
 
 
-    this.sasService.ejecutarReProceso('common/getReRun',proceso.id_proceso).then((respuesta: any) => {
+    this.sasService.ejecutarReProceso('common/getReRun',proceso.ID_PROCESO).then((respuesta: any) => {
       const estadoRes = respuesta.status[0].ESTADO;
       this.loadingPage = false;
 
       if (estadoRes.toLowerCase() === "ok") {
         this.messageService.add({
           severity: "success",
-          detail: `Reprocesando ${proceso.Nombre_proceso}`,
+          detail: `Reprocesando ${proceso.NOMBRE_PROCESO}`,
         });
       } else {
         this.messageService.add({
@@ -73,6 +73,10 @@ export class ReprocessMainComponent implements OnInit {
 
       }
     }).catch((error: any) => {
+      this.messageService.add({
+        severity: "error",
+        detail: `Error al ejecutar el proceso ${proceso.NOMBRE_PROCESO}`,
+      });
       this.loadingPage = false;
     });
   }
