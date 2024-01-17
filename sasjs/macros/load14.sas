@@ -5,7 +5,7 @@
   @li messagebe.sas
 
 **/
-%macro load12(path=);
+%macro load14(path=);
 
 	libname myxls xlsx "&path.";
 

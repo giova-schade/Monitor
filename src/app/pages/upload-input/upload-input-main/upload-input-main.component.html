@@ -37,16 +37,23 @@
 
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
+                                                
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(1)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(1)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -83,16 +90,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(2)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(2)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -131,16 +144,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(3)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(3)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -178,16 +197,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(4)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(4)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -225,16 +250,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(5)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(5)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -276,16 +307,22 @@
                                     <div class="grid">
 
 
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(6)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(6)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -323,16 +360,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(7)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(7)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -370,16 +413,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(8)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(8)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -417,16 +466,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(9)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(9)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -464,16 +519,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(10)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(10)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -487,7 +548,7 @@
                         <div class="card-body">
                             <div class="grid">
                                 <div class="col-12">
-                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,10)">
+                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,11)">
                                         <input type="file" #fileDropRef id="fileDropRef" multiple
                                             (change)="fileBrowseHandler($event,11)" />
                                         <img src="/Monitor/assets/img/dnd/ic-upload-file.svg" alt="">
@@ -511,16 +572,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(11)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(11)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -534,7 +601,7 @@
                         <div class="card-body">
                             <div class="grid">
                                 <div class="col-12">
-                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,10)">
+                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,12)">
                                         <input type="file" #fileDropRef id="fileDropRef" multiple
                                             (change)="fileBrowseHandler($event,12)" />
                                         <img src="/Monitor/assets/img/dnd/ic-upload-file.svg" alt="">
@@ -558,16 +625,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(12)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(12)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -581,7 +654,7 @@
                         <div class="card-body">
                             <div class="grid">
                                 <div class="col-12">
-                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,10)">
+                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,13)">
                                         <input type="file" #fileDropRef id="fileDropRef" multiple
                                             (change)="fileBrowseHandler($event,13)" />
                                         <img src="/Monitor/assets/img/dnd/ic-upload-file.svg" alt="">
@@ -605,16 +678,76 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="grid">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
+                                                
                                                 <button pButton type="button" label="Subir datos"
                                                     (click)="cargarInput(13)"></button>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group p-fluid">
                                                 <button pButton type="button" label="Descargar"
                                                     (click)="Download(13)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </p-tabPanel>
+                    <p-tabPanel header="Parametro carga de datos">
+                        <div class="card-body">
+                            <div class="grid">
+                                <div class="col-12">
+                                    <div class="container" appDnd (fileDropped)="onFileDropped($event,14)">
+                                        <input type="file" #fileDropRef id="fileDropRef" multiple
+                                            (change)="fileBrowseHandler($event,14)" />
+                                        <img src="/Monitor/assets/img/dnd/ic-upload-file.svg" alt="">
+                                        <h3>Arrastra y suelta el archivo aquí</h3>
+                                        <h3>o</h3>
+                                        <label for="fileDropRef">Selecciona el archivo</label>
+                                    </div>
+                                    <div class="files-list">
+                                        <div class="single-file" *ngFor="let file of files14; let i = index">
+                                            <img src="/Monitor/assets/img/dnd/ic-file-excel.svg" width="45px"
+                                                alt="file">
+                                            <div class="info">
+                                                <h4 class="name">{{ file?.name }}</h4>
+                                                <p class="size">{{ formatBytes(file?.size) }}</p>
+                                            </div>
+                                            <img src="/Monitor/assets/img/dnd/ic-delete-file.svg" class="delete"
+                                                width="20px" alt="file" (click)="deleteFile(14)">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <div class="grid">
+                                        <div class="col-4">
+                                            <div class="form-group p-fluid">
+                                                <button pButton type="button" label="Subir datos"
+                                                    (click)="cargarInput(14)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group p-fluid">
+                                                <button pButton type="button" label="Descargar"
+                                                    (click)="Download(14)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4" *ngIf="errorCodeForNavigation">
+                                            <div class="form-group p-fluid">
+                                                   <button pButton type="button" label="Detalles del Error" (click)="navigateToErrorPage()"></button>
+
                                             </div>
                                         </div>
                                     </div>

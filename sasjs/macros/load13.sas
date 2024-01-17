@@ -44,8 +44,8 @@
 			out=datos&cnt.
 			dbms=xlsx
 			replace;
-			sheet="&hoja_actual."; /* Asegúrate de que el nombre de la hoja sea exactamente el mismo que en el archivo Excel. */
-			getnames=yes; /* Suponiendo que la primera fila contiene los nombres de las columnas */
+			sheet="&hoja_actual.";
+			getnames=yes; 
 		run;
 
 		%webout(OBJ,datos&cnt.);

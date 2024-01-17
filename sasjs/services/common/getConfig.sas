@@ -7,7 +7,7 @@
 /* this macro converts the JS input to a WORK table - work.areas */
 %global  dtlog;
 %let dtlog = %sysfunc(compress(%sysfunc(putn(%sysfunc(date()),yymmdd7.))))_%sysfunc(compress(%sysfunc(tranwrd(%sysfunc(putn(%sysfunc(time()),time.)),:,))));
-proc printto log="/sasdata/opt/data/sas_psd/Procesos/logs/getConfig&dtlog.log";
+proc printto log="/sasdata/opt/data/sas_psd/Procesos/logs/getConfig&dtlog..log";
 run;
 %webout(FETCH)
 %getConfig();

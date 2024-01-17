@@ -3,6 +3,7 @@ import { UploadFile } from '@sasjs/adapter';
 import { MessageService } from 'primeng/api';
 import { Table } from 'primeng/table';
 import { SasService } from 'src/app/services/sas.service';
+import { Router } from '@angular/router';
 interface TabConfig {
   fileIndex: number;
   name: string;
@@ -19,6 +20,7 @@ interface TabConfig {
 
 
 export class UploadInputMainComponent {
+  
   public clavesDatos: string[] = [];
   public respuestaDat: any;
   activeIndex: number = 0;
@@ -36,12 +38,14 @@ export class UploadInputMainComponent {
   files11: any[] = [];
   files12: any[] = [];
   files13: any[] = [];
+  files14: any[] = [];
   tabConfigurations: TabConfig[] = [];
   multiSortField: any;
   Fieldview: boolean;
   loading!: boolean;
   datasource: any;
   fieldCampos: any;
+  errorCodeForNavigation: string | null = null;
 
 
   @ViewChild('datos') datos: any;
@@ -51,7 +55,7 @@ export class UploadInputMainComponent {
 
   @ViewChild("fileDropRef", { static: false }) fileDropEl: ElementRef | any;
 
-  constructor(private messageService: MessageService, private sasService: SasService,) {
+  constructor(private messageService: MessageService, private sasService: SasService,private router: Router) {
     this.loadingPage = false;
     this.fieldCampos = [];
     this.multiSortField = [];
@@ -109,6 +113,7 @@ export class UploadInputMainComponent {
   }
 
   public handleChange(event: any) {
+    this.errorCodeForNavigation ='';
     this.loadingPage = true;
     const config = this.getConfigByIndex(event.index + 1);
     this.sasService.getDataField('common/getDataField', config.name).then((respuesta: any) => {
@@ -186,7 +191,7 @@ export class UploadInputMainComponent {
     const extensionToMimeType: { [key: string]: string } = {
       'txt': 'text/plain',
       'xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-      // Agrega aquí más mapeos si son necesarios
+
     };
 
     return extensionToMimeType[extension.toLowerCase()] || 'application/octet-stream';
@@ -198,7 +203,7 @@ export class UploadInputMainComponent {
       name: '',
       extension: '',
       mimeType: '',
-      urlDownload: '' // Asegúrate de agregar esta propiedad a tu interfaz TabConfig si es necesaria
+      urlDownload: '' 
     };
     return this.tabConfigurations.find(config => config.fileIndex === index) || defaultConfig;
   }
@@ -233,6 +238,8 @@ export class UploadInputMainComponent {
         return this.files12;
       case 13:
         return this.files13;
+      case 14:
+        return this.files14;
       default:
         return [];
     }
@@ -313,12 +320,24 @@ export class UploadInputMainComponent {
     this.sasService.uploadFile('services/common/putFile', [uploadFile], additionalParams).then((response: any) => {
       // Manejar la respuesta del servidor SAS
     this.loadingPage = false;
-
+    const estadoRes = response.status[0].ESTADO;
+    if (estadoRes.toLowerCase() === "ok") {
       console.log('Archivo subido con éxito:', response);
       this.messageService.add({
         severity: "success",
         detail: `Archivo ${fileToUpload.name} subido con éxito`,
       });
+    } else {
+      const errorMessage = response.status[0].MENSAJE;
+      const errorCode = errorMessage.split('Revisar errores:')[1]?.trim();
+      this.errorCodeForNavigation = errorCode; // Asegúrate de declarar esta propiedad en la clase
+    
+      this.messageService.add({
+        severity: "warn",
+        detail: `Error: ${errorMessage}. Haga clic en el botón 'Detalles del Error' para más información.`
+      });
+    }
+
     }).catch((error: any) => {
     this.loadingPage = false;
 
@@ -335,7 +354,11 @@ export class UploadInputMainComponent {
     let selectedFiles = this.selectFile(index);
     selectedFiles.splice(0, 1);
   }
-
+  public navigateToErrorPage() {
+    if (this.errorCodeForNavigation) {
+      this.router.navigate(['/ProcessExecutions'], { queryParams: { id_proceso: this.errorCodeForNavigation } });
+    }
+  }
 
   public uploadFilesSimulator(index: number) {
   }

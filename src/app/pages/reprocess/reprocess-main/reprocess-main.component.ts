@@ -54,31 +54,15 @@ export class ReprocessMainComponent implements OnInit {
     this.loadingPage = true; 
 
 
-    this.sasService.ejecutarReProceso('common/getReRun',proceso.ID_PROCESO).then((respuesta: any) => {
-      const estadoRes = respuesta.status[0].ESTADO;
-      this.loadingPage = false;
+    this.sasService.ejecutarReProceso('common/getReRun', proceso.ID_PROCESO);
 
-      if (estadoRes.toLowerCase() === "ok") {
-        this.messageService.add({
-          severity: "success",
-          detail: `Reprocesando ${proceso.NOMBRE_PROCESO}`,
-        });
-      } else {
-        this.messageService.add({
-          severity: "warn",
-          detail: `${respuesta.status[0].MENSAJE}`,
-        });
-
-     
-
-      }
-    }).catch((error: any) => {
-      this.messageService.add({
-        severity: "error",
-        detail: `Error al ejecutar el proceso ${proceso.NOMBRE_PROCESO}`,
-      });
-      this.loadingPage = false;
+    // Aquí puedes añadir cualquier acción que quieras realizar inmediatamente después de enviar la solicitud
+    this.messageService.add({
+      severity: "info",
+      detail: `Solicitud de reprocesamiento enviada para ${proceso.NOMBRE_PROCESO}`,
     });
+  
+    this.loadingPage = false;
   }
 
 }

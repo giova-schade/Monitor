@@ -8,7 +8,7 @@
 %macro load6(path=);
 
 	data datos;
-		infile "&path" dlm='|' missover dsd lrecl=32767;
+		infile "&path" dlm='|' missover dsd lrecl=32767 firstobs=2;
 		length Local $10;
 		input Local $;
 	run;

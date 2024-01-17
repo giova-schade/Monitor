@@ -44,13 +44,12 @@
 			out=datos&cnt.
 			dbms=xlsx
 			replace;
-			sheet="&hoja_actual."; /* Asegúrate de que el nombre de la hoja sea exactamente el mismo que en el archivo Excel. */
-			getnames=yes; /* Suponiendo que la primera fila contiene los nombres de las columnas */
+			sheet="&hoja_actual."; 
+			getnames=yes; 
 		run;
 
 		%webout(OBJ,datos&cnt.);
 
-		/* Aquí va el código que deseas ejecutar para cada elemento de la lista */
 		%let cnt = %eval(&cnt + 1);
 	%end;
 

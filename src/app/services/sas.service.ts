@@ -87,6 +87,46 @@ export class SasService {
         )
     })
   }
+  public getDatalog(url: string, field: any, config?: any){
+    url = 'services/' + url
+    const data: { [key: string]: Array<{ [key: string]: any }> } = {
+      'paramlog': []
+    };
+    const paramlog: { [key: string]: any } = {};
+    paramlog["field"] = field;
+    data['paramlog'].push(paramlog);
+    return new Promise((resolve, reject) => {
+      this.adapter
+        .request(url, data, config, () => {
+          this.stateService.setIsLoggedIn(false)
+        })
+        .then(
+          (res: any) => {
+            if (res.login === false) {
+              this.stateService.setIsLoggedIn(false)
+              this.stateService.username.next('')
+              reject(false)
+            }
+
+            if (
+              this.stateService.username.getValue().length < 1 &&
+              res.MF_GETUSER
+            ) {
+              this.stateService.username.next(res.MF_GETUSER)
+            }
+
+            if (res.status === 404) {
+              reject({ MESSAGE: res.body || 'SAS responded with an error' })
+            }
+
+            resolve(res)
+          },
+          (err: any) => {
+            reject(err)
+          }
+        )
+    })
+  }
   public request(url: string, data: any, config?: any) {
     url = 'services/' + url
 

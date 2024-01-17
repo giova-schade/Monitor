@@ -8,7 +8,7 @@
 %macro load1(path=);
 
 	data datos;
-		infile "&path" dlm='|' missover dsd lrecl=32767;
+		infile "&path" dlm='|' missover dsd lrecl=32767 firstobs=2;
 		length 
 			Item_Id $20 
 			CATEGORIA1_ID $20 

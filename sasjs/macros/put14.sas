@@ -2,12 +2,12 @@
   @file
   @brief <Your brief here>
   <h4> SAS Macros </h4>
-  @li messagebe.sas
+   @li messagebe.sas
 
 **/
 /*ejemplo para leer desde la web*/
 
-%macro put7(path=);
+%macro put14(path=);
 
   %let FILExlsx=%sysfunc(pathname(&_WEBIN_FILEREF));
 	libname myxls xlsx "&FILExlsx.";
@@ -97,4 +97,4 @@
 			%webout(OBJ,status);
 			%webout(CLOSE);
 		%end;
-    %mend put7;
+    %mend put14;

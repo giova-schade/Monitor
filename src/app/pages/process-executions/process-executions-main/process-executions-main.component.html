@@ -12,8 +12,9 @@
             <!-- Nueva sección para la p-table -->
             <div class="card-body">
                 <div class="col-12" *ngIf="datasource && datasource.length > 0">
+
                     <p-panel header="Monitor" [toggleable]="true">
-                        <p-table #Logs [columns]="LogsCampos" [value]="datasource" [rowHover]="true" [rows]="10"
+                        <p-table #datos [columns]="LogsCampos" [value]="datasource" [rowHover]="true" [rows]="10"
                             [showCurrentPageReport]="true" [loading]="loading" [paginator]="true"
                             currentPageReportTemplate="Mostrar {first} hasta {last} de {totalRecords} datos"
                             [filterDelay]="0" [resizableColumns]="true" [responsive]="true" [autoLayout]="true"
@@ -22,7 +23,7 @@
                             <ng-template pTemplate="caption">
                                 <div class="flex">
                                     <button pButton label="Limpiar" class="p-button-outlined custom-button"
-                                        icon="pi pi-filter-slash" (click)="clear(datos)">
+                                        icon="pi pi-filter-slash" (click)="clear(datos) ">
                                     </button>
                                     <span class="p-input-icon-left p-ml-auto">
                                         <i class="pi pi-search"></i>
@@ -52,6 +53,9 @@
                         </p-table>
                     </p-panel>
                 </div>
+                <button pButton type="button" label="Recarga"
+                                                    (click)="reload()"></button>
+
             </div>
         </div>
     </div>

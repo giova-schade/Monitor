@@ -6,8 +6,9 @@
 
 **/
 
-libname FCST_STG '/sasshared/fcst_stage/';
+
 %macro getConfig();
+    libname FCST_STG '/sasshared/fcst_stage/';
     proc sql;
         create table datos as select * from FCST_STG.ConfCargaInput;
     quit;
